@@ -71,7 +71,7 @@ function Header() {
           </a>
         </div>
       </div>
-      <LowerHeader/>
+      <LowerHeader />
     </>
   );
 }
