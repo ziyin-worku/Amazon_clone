@@ -13,7 +13,7 @@ function ProductDetail() {
   const { productId } = useParams();
 
   useEffect(() => {
-    setIsLoading(true)
+    setIsLoading(true);
     axios
       .get(`${productUrl}/products/${productId}`)
       .then((res) => {
@@ -29,16 +29,7 @@ function ProductDetail() {
   return (
     <>
       <LayOut>
-        {isLoading ? (
-          <Loader />
-        ) : (
-          <div style={{ display: "grid", justifyContent: "center" }}>
-            <h2 style={{ textAlign: "center", margin: "30px auto" }}>
-              product Detail{" "}
-            </h2>
-            <ProductCard product={product} />
-          </div>
-        )}
+        {isLoading ? <Loader /> : <ProductCard product={product} flex={true} renderDesc={true}/>}
       </LayOut>
     </>
   );

@@ -48,3 +48,35 @@
 .products_container section {
   margin: 0 auto;
 }
+
+.product_flexed {
+  box-shadow: none;
+  /* height: auto; */
+  display: flex;
+  gap: 50px;
+  width: 70vw;
+  height: 50vh;
+}
+.product_flexed h4 {
+  padding: 20px 0;
+}
+.product_flexed .button {
+  display: block;
+  position: static;
+  width: 150px;
+  margin-left: 40px;
+}
+.product_flexed img {
+  width: 300px !important;
+  height: auto;
+}
+
+/* ******there is some error */
+@media screen and (max-width: 768px) {
+  .product_flexed {
+    display: flex;
+    flex-direction: column;
+    min-width:50vw;
+   text-align: justify;
+  }
+}
