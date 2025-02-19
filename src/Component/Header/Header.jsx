@@ -5,10 +5,17 @@ import { BiCart } from "react-icons/bi";
 import classes from "./Header.module.css";
 import LowerHeader from "./LowerHeader";
 import { Link } from "react-router";
+import { useContext } from "react";
+import { DataContext } from "../DataProvider/DataProvider";
 
 function Header() {
+  const [{basket}, dispatch]=useContext(DataContext)
+
+
+
+
   return (
-    <>
+    <section className={classes.fixed}>
       <div className={classes.header_container}>
         <div className={classes.logo_container}>
           {/* logo */}
@@ -67,13 +74,13 @@ function Header() {
           <Link to={"/cart"} className={classes.cart}>
             <BiCart size={38} />
 
-            <span className={classes.orders}>0</span>
+            <span className={classes.orders}>{basket.length}</span>
             <span>Cart</span>
           </Link>
         </div>
       </div>
       <LowerHeader />
-    </>
+    </section>
   );
 }
 
