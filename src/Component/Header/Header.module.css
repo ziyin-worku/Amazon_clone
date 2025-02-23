@@ -124,7 +124,7 @@
 }
 
 a:hover {
-  border: 1px solid #fff;
+  outline: 1px solid #fff;
 }
 
 /* ********lower header */
