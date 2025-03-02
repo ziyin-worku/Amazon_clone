@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import classes from "./Cart.module.css";
-import LayOut from "../../Component/Layout/Layout";
+import LayOut from "../../Component/LayOut/LayOut";
 import ProductCard from "../../Component/Product/ProductCard";
 import { DataContext } from "../../Component/DataProvider/DataProvider";
 import CurrencyFormat from "../../Component/CurrencyFormat/CurrencyFormat";
