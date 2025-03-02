@@ -44,7 +44,7 @@ function Header() {
             <option value="">All</option>
           </select>
           <input type="text" name="" placeholder="search product" />
-          <FaSearch size={25} />
+          <FaSearch size={38} />
         </div>
 
         {/* right side */}
