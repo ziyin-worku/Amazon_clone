@@ -2,7 +2,7 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import { img } from "./image/data";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import styles from './Carousel.module.css'
+import styles from "./Carousel.module.css";
 
 function CarouselEffect() {
   return (
@@ -12,6 +12,7 @@ function CarouselEffect() {
         infiniteLoop={true}
         showIndicators={false}
         showThumbs={false}
+        // dynamicHeight={false}
       >
         {img?.map((imageItemLink, i) => {
           return <img key={i} src={imageItemLink} alt="" />;
@@ -21,6 +22,5 @@ function CarouselEffect() {
     </div>
   );
 }
-
 
 export default CarouselEffect;

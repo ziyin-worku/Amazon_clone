@@ -152,6 +152,10 @@ a:hover {
   align-items: center;
 }
 
+
+/* Always show content when screen is above 576px */
+
+
 @media screen and (max-width: 576px) {
   .header_container {
     display: flex;
@@ -160,8 +164,12 @@ a:hover {
   }
   .lower_container ul li:not(:first-child) {
     display: none;
+    
   }
   .language{
     display: none;
   }
 }
+
+
+

@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 
 import classes from "./Header.module.css";
+import { Link } from "react-router";
 
 function LowerHeader() {
   return (
@@ -10,10 +11,11 @@ function LowerHeader() {
         <li>
           <a href="">
             {/* icons  */}
-            <AiOutlineMenu fontWeight={800} fontSize={24}/>
+            <AiOutlineMenu fontWeight={800} fontSize={24} />
             All
           </a>
         </li>
+
         <li>
           <a href="">Today's Deals</a>
         </li>

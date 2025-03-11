@@ -1,7 +1,6 @@
 import React, { createContext, useReducer } from "react";
 // import { reducer } from "../../Utility/reducer";
 
-
 export const DataContext = createContext();
 
 export const DataProvider = ({ children, reducer, initialState }) => {
@@ -11,4 +10,3 @@ export const DataProvider = ({ children, reducer, initialState }) => {
     </DataContext.Provider>
   );
 };
-
