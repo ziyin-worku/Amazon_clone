@@ -109,7 +109,7 @@ function Auth() {
               onChange={(e) => setPassword(e.target.value)}
               type="password"
               id="password"
-            />  
+            />
           </div>
 
           <button
